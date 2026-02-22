@@ -22,14 +22,8 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=38.98&lon=1.43&appid=
   document.getElementById("Temperatura-Ibiza").textContent = Math.round(data.main.temp);
   document.getElementById("Humedad-Ibiza").textContent = Math.round(data.main.humidity);
 
-  // Texto condicional con nube
-  const textoElem = document.getElementById("Texto-Ibiza");
-  if (Math.round(data.main.temp) > 10) {
-    textoElem.textContent = "☁️";
-  } else {
-    textoElem.textContent = "9";
-  }
-});
+
+
 
 
 
